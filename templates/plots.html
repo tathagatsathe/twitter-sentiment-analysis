@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Analyzing {{company}}'s Public Perception: A Visual Exploration of Tweets and Stock Prices</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <h1 style="text-align:center;">Analyzing {{company}}'s Public Perception: A Visual Exploration of Tweets and Stock Prices</h1>
+	<div id="plots" style="display:flex;flex-direction:row;">
+	  <div style="width:70%;">
+	  {{plot_div|safe}}
+	  </div>
+	  <div style="width:30%">
+	  {{pie_div|safe}}
+	  </div>
+	</div>
+  <div style="display:flex;flex-direction:row;">
+    <div style="width:30%">
+       <img src="data:image/png;base64,{{wordcloud}}" />
+    </div>
+    <div style="width:70%;">
+	  {{bar_div|safe}}
+    </div>
+  </div>
+</body>
+</html>
+
